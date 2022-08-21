@@ -40,7 +40,7 @@ app.layout = dbc.Container([
         dbc.Col([
             html.P("Company info found in list:",
                    style={"textDecoration": "underline"}),
-            dcc.Dropdown(id='names1', options=[{'label': 'found in CoC list', 'value': 'found in CoC list'}, {'label': 'found in list', 'value': 'found in AGB list'}, {'label': 'found in AGB list', 'value': 'found in WTZI list'}],
+            dcc.Dropdown(id='names1', options=[{'label': 'found in list_1', 'value': 'found in list_1'}, {'label': 'found in list_2', 'value': 'found in list_2'}, {'label': 'found in list_3', 'value': 'found in list_3'}],
                 value='found in CoC list', clearable=False
         ),
             dcc.Graph(id='pie-graph1', figure={}),
