@@ -6,6 +6,8 @@ The dashboard was created with python dash plotly. I used the video from charmin
 
 https://www.youtube.com/watch?v=0mfIK8zxUds&t=13s
 
+The example input data you can find in the github repository. The data used is about grant applications by the companies.The company names are anonimised for obvious reasons. The other data (money, dates) are heavily modified so as not to be able to trace to its origin.
+
 # You can view dashboard via the link below: 
 
 https://ronirmal.pythonanywhere.com/
