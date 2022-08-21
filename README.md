@@ -1,4 +1,4 @@
-# dash-bootstrap-dashboard-web-app
+# bootstrap-dashboard-web-app
 
 This dashboard is an example to design and style a dashboard app completely in python with Dash Bootstrap. It includes the grid of the page, fonts, colors, rows and columns when designing future dashboard apps.
 
@@ -6,7 +6,7 @@ The dashboard was created with python dash plotly. I used the video from charmin
 
 https://www.youtube.com/watch?v=0mfIK8zxUds&t=13s
 
-You can view dashboard via the link below: 
+# You can view dashboard via the link below: 
 
 https://ronirmal.pythonanywhere.com/
 
