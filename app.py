@@ -41,7 +41,7 @@ app.layout = dbc.Container([
             html.P("Company info found in list:",
                    style={"textDecoration": "underline"}),
             dcc.Dropdown(id='names1', options=[{'label': 'found in list_1', 'value': 'found in list_1'}, {'label': 'found in list_2', 'value': 'found in list_2'}, {'label': 'found in list_3', 'value': 'found in list_3'}],
-                value='found in CoC list', clearable=False
+                value='found in list_1', clearable=False
         ),
             dcc.Graph(id='pie-graph1', figure={}),
         ], #width={'size':4, 'offset':0, 'order':2},
@@ -49,7 +49,7 @@ app.layout = dbc.Container([
         ),
         
         dbc.Col([
-            html.P("Top ten applicants:",
+            html.P("Top ten applicants per type of organization:",
                    style={"textDecoration": "underline"}),
             dcc.Dropdown(id='my-dpdn3', multi=True, 
             value=['Type_1', 'Type_2'], options=[{'label':x, 'value':x}
@@ -62,7 +62,7 @@ app.layout = dbc.Container([
         ], justify='start'),  # Horizontal:start,center,end,between,around
     dbc.Row([
         dbc.Col([
-            html.P("Total Subsidy vs type of organization:",
+            html.P("Total Subsidy vs type of organization with application results:",
                    style={"textDecoration": "underline"}),
             dcc.Checklist(id='my-checklist', value=['active', 'completed'],
                           options=[{'label':x, 'value':x}
@@ -73,7 +73,7 @@ app.layout = dbc.Container([
            xs=12, sm=12, md=12, lg=4, xl=4
         ),
         dbc.Col([
-            html.P("Status application qua submission date:",
+            html.P("Status application qua submission date with application results:",
                    style={"textDecoration": "underline"}),
             dcc.Dropdown(id='my-dpdn', multi=False, value='complete',
                          options=[{'label':x, 'value':x}
@@ -86,7 +86,7 @@ app.layout = dbc.Container([
         ),
         
         dbc.Col([
-            html.P("Number of applications vs Total Grant:",
+            html.P("Number of applications vs Total Grant per type of organization:",
                    style={"textDecoration": "underline"}),
             dcc.Dropdown(id='my-dpdn2', multi=True, 
             value=['Type_1', 'Type_2'], options=[{'label':x, 'value':x}
@@ -165,7 +165,7 @@ def update_graph(bonusorgtype):
 def update_graph(status_slctd):
     dff = df[df['STATUS']==status_slctd]
     #figln = px.line(dff, x='Date', y='High')
-    figln = px.histogram(dff, x='Inzenddatum', labels={"ACTIVE": "RESULT"}, color='ACTIVE')
+    figln = px.histogram(dff, x='Date_received', labels={"ACTIVE": "RESULT"}, color='ACTIVE')
     return figln
 if __name__=='__main__':
     app.run_server(debug=True, port=8000)
