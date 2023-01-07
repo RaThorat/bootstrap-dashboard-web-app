@@ -8,13 +8,6 @@ https://www.youtube.com/watch?v=0mfIK8zxUds&t=13s
 
 The example input data you can find in the github repository. The data used is about grant applications by the companies.The company names are anonimised for obvious reasons. The other data (money, dates) are heavily modified so as not to be able to trace to its origin.
 
-# You can view dashboard via the link below: 
-
-https://ronirmal.pythonanywhere.com/
-
-How to use: If you want to see the entire dashboard on your laptop or on your external screen, zoom out 67% in your browser with your laptop or with your screen. You can also view the dashboard on your mobile browser. The graphs are interactive. You can use dropdown or checklist. You can also click or hover over the graphs to see more information. The graphs are examples for further development.
-
-
 ## Dependencies
 The following libraries are used in this app:
 
@@ -45,3 +38,10 @@ The app has the following features:
   A histogram showing the total subsidy vs type of organization, with application results based on a checklist
 
   A scatter plot showing the correlation between two variables, based on a dropdown selection
+  
+## You can view dashboard via the link below: 
+
+https://ronirmal.pythonanywhere.com/
+
+How to use: If you want to see the entire dashboard on your laptop or on your external screen, zoom out 67% in your browser with your laptop or with your screen. You can also view the dashboard on your mobile browser. The graphs are interactive. You can use dropdown or checklist. You can also click or hover over the graphs to see more information. The graphs are examples for further development.
+
